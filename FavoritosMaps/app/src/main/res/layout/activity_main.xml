@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.gezuzm.favoritosmaps.MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lugares favoritos de la ciudad"
+        android:textAlignment="center"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="33dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/btnIrTeatro"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/tvTitulo"
+                android:text="Ir a otro lado"
+                android:onClick="ir"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/teatrojuarez"
+                android:scaleType="centerCrop"
+                android:background="@color/fondo"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teatro Juárez"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="35dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/btnIrUniversidad"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/tvTitulo"
+                android:text="Ir a otro lado"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/universidad"
+                android:scaleType="centerCrop"
+                android:onClick="ir"
+                android:background="@color/fondo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Universidad UASLP"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="33dp">
+
+            <ImageButton
+                android:id="@+id/btnIrParque"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/tvTitulo"
+                android:text="Ir a otro lado"
+                android:onClick="ir"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/parque"
+                android:scaleType="centerCrop"
+                android:background="@color/fondo"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parque Tangamanga"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="35dp">
+
+            <ImageButton
+                android:id="@+id/btnIrCentroArtes"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/tvTitulo"
+                android:text="Ir a otro lado"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/casa_de_la_cultura"
+                android:scaleType="centerCrop"
+                android:onClick="ir"
+                android:background="@color/fondo"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Casa de la Cultura"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+               />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
